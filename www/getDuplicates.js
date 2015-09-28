@@ -16,7 +16,7 @@
                     prev = 0,
                     current = prev + 1;
 
-                if(!!input) {
+                if(!len) {
                     return;
                 }
 
