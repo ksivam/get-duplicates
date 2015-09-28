@@ -10,15 +10,15 @@
             this.inputString = ko.observable('');
             this.duplicateString = ko.observable('');
             this.getDupes = function(){
-                if(!!input) {
-                    return;
-                }
-
                 var result = '',
                     input = that.inputString(),
                     len = input.length,
                     prev = 0,
                     current = prev + 1;
+
+                if(!!input) {
+                    return;
+                }
 
                 // time complexity: (-) n
                 while(prev < len && current < len){
